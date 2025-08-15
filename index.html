@@ -4,41 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vamsee Krishna - Full Stack Engineer</title>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init({
-          publicKey: "omsbkIYm9lwDFKEIe",
-        });
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contactForm")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            // these IDs from the previous steps
-            emailjs
-              .sendForm("service_eggcslo", "template_xujxrph", {
-                ...this,
-                time: new Date().getDate().toLocaleString(),
-              })
-              .then(
-                () => {
-                  console.log("SUCCESS!");
-                },
-                (error) => {
-                  console.log("FAILED...", error);
-                }
-              );
-          });
-      };
-    </script>
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
@@ -564,6 +530,39 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "omsbkIYm9lwDFKEIe",
+        });
+      })();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+
+        if (form) {
+          form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm("service_eggcslo", "template_xujxrph", form).then(
+              () => {
+                console.log("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+
+          console.log("Form listener registered successfully");
+        } else {
+          console.log("Form not found");
+        }
+      });
+    </script>
 
     <script src="app.js"></script>
   </body>
