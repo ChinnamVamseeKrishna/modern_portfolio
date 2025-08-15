@@ -479,12 +479,7 @@
             </div>
           </div>
           <div class="contact-form-container">
-            <form
-              class="contact-form"
-              id="contactForm"
-              method="POST"
-              action="https://formspree.io/f/xovlbpvp"
-            >
+            <form class="contact-form" id="contactForm" method="POST">
               <div class="form-group">
                 <input type="text" id="name" name="name" required />
                 <label for="name">Your Name</label>
@@ -542,19 +537,32 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("contactForm");
-
         if (form) {
           form.addEventListener("submit", function (event) {
             event.preventDefault();
-
-            emailjs.sendForm("service_eggcslo", "template_xujxrph", form).then(
-              () => {
-                console.log("SUCCESS!");
-              },
-              (error) => {
-                console.log("FAILED...", error);
-              }
-            );
+            const today = new Date();
+            const longFormattedDate = today.toLocaleString("en-GB", {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            emailjs
+              .send("service_eggcslo", "template_xujxrph", {
+                name: this.name.value,
+                email: this.email.value,
+                subject: this.subject.value,
+                message: this.message.value,
+                time: longFormattedDate,
+              })
+              .then(
+                () => {
+                  console.log("SUCCESS!");
+                },
+                (error) => {
+                  console.log("FAILED...", error);
+                }
+              );
           });
 
           console.log("Form listener registered successfully");
