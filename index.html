@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamsee Krishna - Full Stack Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loader-hexagon">
+                <div class="hex"></div>
+                <div class="hex"></div>
+                <div class="hex"></div>
+            </div>
+            <div class="loading-text">INITIALIZING...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <span class="glitch-text">VK</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="particles-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    <span class="typing-text">Chinnam Vamsee Krishna</span>
+                    <span class="cursor-blink">|</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="animated-underline">Full Stack Engineer</span>
+                </h2>
+                <p class="hero-description fade-in-up">
+                    Crafting digital experiences with cutting-edge technologies
+                </p>
+                <div class="hero-buttons fade-in-up">
+                    <a href="#contact" class="btn-primary">
+                        <span>Get In Touch</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="https://github.com/chinnamvamseekrishna" target="_blank" class="btn-secondary">
+                        <span>View GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-contact">
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">chinnamvamseekrishna@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+91 8919666461</span>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description reveal-text">
+                        I'm a passionate Full Stack Engineer with experience in building scalable web applications 
+                        and digital solutions. Currently working at Grant Thornton, I specialize in modern web 
+                        technologies and have a strong foundation in both frontend and backend development.
+                    </p>
+                    <div class="education-cards">
+                        <div class="education-card hover-tilt">
+                            <div class="card-header">
+                                <h3>B.Tech Computer Science</h3>
+                                <span class="year">2021</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="institution">VFSTR, Guntur AP</p>
+                                <p class="grade">CGPA: 8.6/10</p>
+                            </div>
+                        </div>
+                        <div class="education-card hover-tilt">
+                            <div class="card-header">
+                                <h3>Intermediate</h3>
+                                <span class="year">2016</span>
+                            </div>
+                            <div class="card-content">
+                                <p class="institution">Matrix IIT Academy</p>
+                                <p class="grade">97.8%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="awards-section">
+                    <h3>Recognition & Awards</h3>
+                    <div class="awards-grid">
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-content">
+                                <h4>Best Work Award</h4>
+                                <p>Rewarded by client (FLSmidth) for successful go-live (2022)</p>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🥇</div>
+                            <div class="award-content">
+                                <h4>District Topper</h4>
+                                <p>Stood 1st in Ramanujan Maths Olympiad (2013)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item hover-scale" data-aos="fade-right">
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-content">
+                        <div class="job-card">
+                            <div class="job-header">
+                                <h3 class="job-title">Fullstack Engineer</h3>
+                                <span class="job-company">Grant Thornton</span>
+                                <span class="job-duration">Apr 2024 - Present</span>
+                                <span class="job-location">Bangalore</span>
+                            </div>
+                            <div class="job-achievements">
+                                <ul>
+                                    <li>Developed digital solution PACT that automates purchase request and purchase order life cycle</li>
+                                    <li>Revamped user interface increasing customer interaction and revenue</li>
+                                    <li>Integrated optimization techniques reducing API response time by 40%</li>
+                                    <li>Orchestrated geographical zone-wise rollouts using Azure functions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item hover-scale" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-card">
+                            <div class="job-header">
+                                <h3 class="job-title">Node.js Developer</h3>
+                                <span class="job-company">Cognizant</span>
+                                <span class="job-duration">Sep 2021 - Aug 2023</span>
+                                <span class="job-location">Remote</span>
+                            </div>
+                            <div class="job-achievements">
+                                <ul>
+                                    <li>Designed and managed 25 APIs for Site Connect application</li>
+                                    <li>Integrated Node APIs with Android, iOS and web applications</li>
+                                    <li>Achieved 98% code coverage with Jest testing framework</li>
+                                    <li>Debugged and optimized database performance using Knex</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card hover-tilt" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/chinnamvamseekrishna" target="_blank" class="project-link">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BMS Clone</h3>
+                        <p class="project-description">
+                            End-to-end Book My Show application with responsive UI, secure authentication, 
+                            and role-based access control.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Ant Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card hover-tilt" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/chinnamvamseekrishna" target="_blank" class="project-link">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sports Hub</h3>
+                        <p class="project-description">
+                            Complete MERN stack application with store localization, cart functionality, 
+                            and Stripe payment integration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tailwind</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch-text">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="detail-icon">📧</div>
+                            <div class="detail-content">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">chinnamvamseekrishna@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="detail-icon">📱</div>
+                            <div class="detail-content">
+                                <span class="detail-label">Phone</span>
+                                <span class="detail-value">+91 8919666461</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/chinnamvamseekrishna" target="_blank" class="social-link">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://leetcode.com/chinnamvamseekrishna" target="_blank" class="social-link">
+                            <span>LeetCode</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <span>Send Message</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Chinnam Vamsee Krishna. Crafted with passion and code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
