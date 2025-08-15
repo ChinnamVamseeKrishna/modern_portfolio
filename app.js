@@ -4,6 +4,13 @@ let mouseX = 0;
 let mouseY = 0;
 let cursorTrail = [];
 
+window.onload = function () {
+  window.scrollTo(0, 0);
+  if (window.location.hash) {
+    history.replaceState(null, null, " ");
+  }
+};
+
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   initializeApp();
@@ -566,17 +573,6 @@ function startMainAnimations() {
       }s ease-in-out infinite`;
     }, index * 500);
   });
-
-  // Ensure skills section is visible
-  setTimeout(() => {
-    const skillsSection = document.querySelector(".skills-section");
-    if (skillsSection) {
-      skillsSection.scrollIntoView({ behavior: "auto", block: "nearest" });
-      setTimeout(() => {
-        skillsSection.scrollIntoView({ behavior: "auto", block: "nearest" });
-      }, 100);
-    }
-  }, 100);
 }
 
 // Scroll progress indicator
